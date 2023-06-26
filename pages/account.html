@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/all.min.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/breakpoint.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="fixed-top  ">
+        <nav class="navbar navbar-expand-lg  navbar-light  header-scrolled" id="header">
+            <div class="container">
+                <div class="user-items">
+                    <div class="user-item ">
+                        <a href="#">ورود / ثبت نام</a>
+                    </div>
+
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <div class="cart-items">0</div>
+                    </div>
+                </div>
+
+                <!-- <h1 class="navbar-brand text-white">Faraanak.sh</h1> -->
+
+
+
+
+                <button type="button" class="navbar-toggler" data-bs-Toggle="collapse"
+                    data-bs-Target="#my-collapse-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="my-collapse-nav">
+                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0 justify-content-lg-end flex-lg-row-reverse ">
+                        <li class="nav-item "><a class="nav-link  scrollto  text-white active" href="#">خانه</a>
+                        </li>
+                        <li class="nav-item "><a class="nav-link scrollto  text-white " href="#">محصولات</a></li>
+                        <li class="nav-item "><a class="nav-link  scrollto text-white " href="#">درباره ما</a></li>
+                        <li class="nav-item "><a class="nav-link  scrollto text-white " href="#">تماس با ما</a></li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </div>
+    <div class="">
+
+        <div class="carousel slide" id="slidshow_carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-Target="#slidshow_carousel" data-bs-slide-to="0" aria-current="true"
+                    class="active" aria-label="slide 1"></button>
+                <button type="button" data-bs-Target="#slidshow_carousel" data-bs-slide-to="1"
+                    aria-label="slide 2"></button>
+                <button type="button" data-bs-Target="#slidshow_carousel" data-bs-slide-to="2"
+                    aria-label="slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="cover_slidshow">
+                    <img src="../images/slider_01.jpg" class="d-block w-100 " alt=""></img>
+                </div>
+                <div class="carousel-item" id="cover_slidshow">
+                    <img src="../images/slideshow_2.jpg" class="d-block w-100 " alt=""></img>
+                </div>
+                <div class="carousel-item" id="cover_slidshow">
+                    <img src="../images/slideshow_3.jpg" class="d-block w-100 " alt=""></img>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#slidshow_carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slidshow_carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <nav class="navbar">
+      <div class="navbar-center">
+        
+      </div>
+    </nav> -->
+
+
+
+
+
+
+
+
+
+    <!-- about -->
+
+    <!-- about -->
+
+
+    <div class="container mt-5">
+        <div>
+            <h3 class="about_Title_member">عضویت خبرنامه</h3>
+            <p class="about_description_member">با عضویت از ۳۰ درصد تخفیف برخوردار شوید</p>
+        </div>
+        <div class="member_Groups">
+
+
+            <div class=" mt-5 member_Group">
+
+                <div class="about_member_Group input-group ">
+
+                    <form id="add-product-form">
+                        <!-- <div class="about_member_Group input-group row">
+                      <div class="col-6">
+
+                          <button type="submit" class="btn btn-warning " id="about-member_btn">ثبت
+                              نام
+                          </button>
+                      </div>
+                      <div class="col-6">
+
+                          <input type="text" class="about_member_email form-control-plaintext  "
+                              placeholder="پست الکترونیک">
+                      </div>
+
+                  </div> -->
+
+                        <div class="row mb-3">
+                            <label for="validationServer01" class="col-sm-6  col-form-label">نام :</label>
+                            <div class="col-lg-6">
+                                <input type="text" name="firstname" class="form-control " id="validationServer01"
+                                    required>
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label for="validationServer02" class="col-sm-6 col-form-label">نام خانوادگی :</label>
+                            <div class="col-lg-6 col-sm-6">
+                                <input type="text" name="lastname" class="form-control " id="validationServer02"
+                                    required>
+
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label for="validationServer02" class="col-sm-6 col-form-label">آدرس ایمیل:</label>
+                            <div class="col-lg-6 col-sm-6">
+
+                                <input type="text" name="email" class="form-control " id="validationServer03" required>
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label for="validationServerUsername" class="col-sm-6 col-form-label">رمز عبور:</label>
+                            <div class="col-lg-6 col-sm-6">
+
+                                <div class="input-group has-validation">
+                                    <!-- <span class="input-group-text" id="inputGroupPrepend3">@</span> -->
+                                    <input type="password" name="username" class="form-control "
+                                        id="validationServerUsername"
+                                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="col-12 mb-5">
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                Agree to terms and conditions
+                            </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div> -->
+                        <div class="col-12 about-member_btns">
+                            <button class="btn btn-primary about-member_btn" type="submit">ثبت عضویت</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <footer class="footer py-4">
+        <div class="container">
+
+            <div class="row flex-row-reverse">
+                <div class="col-lg-6 col-sm-4 col-md-3">
+                    <div class="footer_title mb-3">فروشگاه</div>
+                    <div class="footer_cats">
+                        <a href="#" class="footer_cat_link mb-2 d-block">فروشگاه </a>
+                        <a href="#" class="footer_cat_link mb-2 d-block">فروشگاه خالی</a>
+                        <a href="#" class="footer_cat_link mb-2 d-block">فروشگاه خالی با توضیحات</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <hr class="footer-separator mb-30">
+
+            <div class="row flex-row-reverse" id="footer">
+                <div class="col-lg-6 col-sm-4 col-md-3">
+                    <div class="footer_title2 ">تمامی حقوق محفوظ است</div>
+                    <div class="footer_cats2">
+                        <a href="#" class="footer_cat_link2 mb-2 ">خانه </a>
+                        <a href="#" class="footer_cat_link2 mb-2 ">امکانات</a>
+                        <a href="#" class="footer_cat_link2 mb-2 ">قالب سفارشی</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-sm-4 col-md-3  align-content-end">
+                    <div class="footer_copyright ">All right resaved</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script type="text/javascript" src="../app.js"></script>
+    <script type="text/javascript" src="../js/account.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/uuid.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
+</body>
+
+</html>
